@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  border: 10px solid grey;
+  width: 70vw;
+  height: 70vw;
+
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.chess-tile {
+  flex: 1;
+}
+
+.chess-row {
+  flex: 1;
+
+  display: flex;
+  flex-flow: row;
+}
+
+.black {
+  background-color: black;
+}

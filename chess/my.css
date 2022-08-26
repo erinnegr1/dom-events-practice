@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    border: 10px solid black;
+    width: 70vw;
+    height: 70vw; /* vw to make it square, will be responsive to width and not height of screen*/
+
+    display: flex;
+    flex-flow: column;
+}
+
+.chess-tile {
+    border: 5px solid rgb(36, 92, 36);
+    flex: 1;
+}
+
+.chess-row {
+    flex: 1; /*allows the rows of the children, will grow to take up the ratio of 1 out of the total. If there are 8 rows, than each will be 1/8th of the total space*/
+    
+    display: flex;
+    flex-flow: row;
+}
+
+/* flex only works on the immediate parent child relationship. So you need to flex the rows etc to make things line up nicely"*/
+
+.black {
+    background-color: black;
+}
+
+
+/* append and append child. if that parent exists it will simply be moved to a new parent*/
